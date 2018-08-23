@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}DOODLE-TODO{% endblock %}
+{% block h1 %}LIVE Playtest{% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel='stylesheet' href='{% static 'css/client.css' %}' />
+{% endblock %}
+
+{% block content %}
+<div id="game"></div>
+<textarea id="chat-log" cols="64" rows="8"></textarea><br/>
+<input id="chat-input" type="text" size="32"/>
+<input id="chat-submit" type="button" value="Send"/>
+{% endblock %}
+
+{% block post-js %}
+{% load static %}
+<script>
+    var roomName = 'lobby';
+</script>
+<script src="{% static 'js/client.js' %}"></script>
+{% endblock %}
+
