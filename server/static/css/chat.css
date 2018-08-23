@@ -1,0 +1,19 @@
+#chat-input {
+    background-color: #eee;
+    color: #2F4F4F;
+    font-size: 16pt;
+}
+
+#chat-submit {
+    margin-top: 0.5rem;
+    border: 0;
+    padding: 0.5rem 2rem;
+    background-color: #2F4F4F;
+    color: #eee;
+    font-size: 16pt;
+}
+
+#chat-submit:hover {
+    background-color: #eee;
+    color: #2F4F4F;
+}
