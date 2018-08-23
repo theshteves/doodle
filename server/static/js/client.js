@@ -1,5 +1,8 @@
 $.get('http://127.0.0.1/api/players/1', function (data) {
     console.log(data);
+    $(document.body).append('<audio autoplay>' +
+        '<source src="' + data.sound + '" type="audio/ogg">' +
+        '</audio>');
 });
 
 var chatSocket = new WebSocket(
